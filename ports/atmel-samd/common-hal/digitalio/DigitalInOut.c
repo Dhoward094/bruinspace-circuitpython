@@ -37,7 +37,7 @@
 
 digitalinout_result_t common_hal_digitalio_digitalinout_construct(
     digitalio_digitalinout_obj_t *self, const mcu_pin_obj_t *pin) {
-    claim_pin(pin);
+    // claim_pin(pin);
     self->pin = pin;
     self->output = false;
     self->open_drain = false;
